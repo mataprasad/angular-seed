@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DbDroid" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=POWERPC\MSSQLSERVER2K8R2;Initial Catalog=DbDroid;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DbDroidConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Droid_Account" Member="Droid_Accounts">
+    <Type Name="Droid_Account">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Owner" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Droid_Member" Member="Droid_Members">
+    <Type Name="Droid_Member">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Droid_Transaction" Member="Droid_Transactions">
+    <Type Name="Droid_Transaction">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Account" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="Effect" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Droid_Data" Member="Droid_Datas">
+    <Type Name="Droid_Data">
+      <Column Name="MembeID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="AccountID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Expr2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Expr3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Owner" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TransactionID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Account" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="Effect" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

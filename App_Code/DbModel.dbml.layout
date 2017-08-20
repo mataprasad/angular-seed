@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DbModel">
+  <DataContextMoniker Name="/DbDroid" />
+  <nestedChildShapes>
+    <classShape Id="6e9e094b-9278-4b64-b943-22f450cfd6f0" absoluteBounds="0.75, 0.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DbDroid/Droid_Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00e839ac-097f-47aa-976c-77688c024d62" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c76b4889-2f90-4fd2-b0fd-55f958660426" absoluteBounds="3.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DbDroid/Droid_Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc2ca3f2-abcc-4c61-b09e-9d4f1fca105a" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="411aba71-b99e-497c-92c8-52c436245489" absoluteBounds="0.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/DbDroid/Droid_Transaction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9721a7e2-0eec-4d61-8035-d812ae8266c6" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7b5db02-9cdf-42fd-9ef7-41f4d6d59587" absoluteBounds="6.5, 0.875, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/DbDroid/Droid_Data" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1699e254-3b62-4a25-be63-b949d29e2313" absoluteBounds="6.515, 1.335, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
